@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADRASA | Account</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <video autoplay loop muted playsinline class="background-video">
+        <source src="graphics/Topographic BG.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <header class="header">
+        <img src="images/ADRASA_LOGOFTRANS.png" alt="ADRASA LOGO" width="200">
+        <nav class="navbar">
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="featured.html">FEATURED</a>
+            <a href="account.html">ACCOUNT</a>
+            <a href="cart.html">CART <span id="cart-count">0</span></a>
+        </nav>
+    </header>
+
+    <section class="account">
+        <h1>Your Account</h1>
+        <div class="account-container">
+            <div class="form-toggle">
+                <button class="toggle-btn active" data-form="login">Login</button>
+                <button class="toggle-btn" data-form="register">Register</button>
+            </div>
+            <div class="account-card" id="login-form">
+                <h2>Login</h2>
+                <form>
+                    <div class="input-group">
+                        <i class="fa fa-envelope"></i>
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="input-group">
+                        <i class="fa fa-lock"></i>
+                        <input type="password" placeholder="Password" required>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                </form>
+            </div>
+            <div class="account-card hidden" id="register-form">
+                <h2>Register</h2>
+                <form>
+                    <div class="input-group">
+                        <i class="fa fa-user"></i>
+                        <input type="text" placeholder="Full Name" required>
+                    </div>
+                    <div class="input-group">
+                        <i class="fa fa-envelope"></i>
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="input-group">
+                        <i class="fa fa-lock"></i>
+                        <input type="password" placeholder="Password" required>
+                    </div>
+                    <button type="submit" class="btn">Register</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
